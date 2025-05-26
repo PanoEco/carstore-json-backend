@@ -11,30 +11,46 @@ app.use(cors());
 // ✅ Parse incoming JSON
 app.use(express.json());
 
-// ✅ Auth middleware (handles login)
+// ✅ Login route (must be BEFORE auth middleware)
+app.post("/api/login", (req, res) => {
+  if (req.body.name === "admin" && req.body.password === "secret") {
+    res.status(200).json({
+      success: true,
+      token: "dummy-jwt-token"
+    });
+  } else {
+    res.status(200).json({ success: false });
+  }
+});
+
+// ✅ Use auth middleware for everything else
 app.use(auth);
 
-// ✅ Routes
+// ✅ GET all products
 app.get("/api/products", (req, res) => {
   res.json(data.products);
 });
 
+// ✅ GET all orders
 app.get("/api/orders", (req, res) => {
   res.json(data.orders || []);
 });
 
+// ✅ POST a new order
 app.post("/api/orders", (req, res) => {
   const newOrder = { ...req.body, id: data.orders.length + 1 };
   data.orders.push(newOrder);
   res.status(201).json(newOrder);
 });
 
+// ✅ POST a new product
 app.post("/api/products", (req, res) => {
   const newProduct = { ...req.body, id: data.products.length + 1 };
   data.products.push(newProduct);
   res.status(201).json(newProduct);
 });
 
+// ✅ PUT update product
 app.put("/api/products/:id", (req, res) => {
   const index = data.products.findIndex(p => p.id === +req.params.id);
   if (index !== -1) {
@@ -45,6 +61,7 @@ app.put("/api/products/:id", (req, res) => {
   }
 });
 
+// ✅ DELETE product
 app.delete("/api/products/:id", (req, res) => {
   const index = data.products.findIndex(p => p.id === +req.params.id);
   if (index !== -1) {
@@ -55,6 +72,7 @@ app.delete("/api/products/:id", (req, res) => {
   }
 });
 
+// ✅ PUT update order
 app.put("/api/orders/:id", (req, res) => {
   const index = data.orders.findIndex(o => o.id === +req.params.id);
   if (index !== -1) {
@@ -65,6 +83,7 @@ app.put("/api/orders/:id", (req, res) => {
   }
 });
 
+// ✅ DELETE order
 app.delete("/api/orders/:id", (req, res) => {
   const index = data.orders.findIndex(o => o.id === +req.params.id);
   if (index !== -1) {
