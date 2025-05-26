@@ -1,44 +1,28 @@
 const express = require("express");
-const https = require("https");
-const fs = require("fs");
-const path = require("path");
-const history = require("connect-history-api-fallback");
-const jsonServer = require("json-server");
-const bodyParser = require("body-parser");
 const auth = require("./authMiddleware");
-
-const router = jsonServer.router("serverdata.json");
-const useHttps = false;
-
-const ssloptions = {};
-
-if (useHttps) {
-    ssloptions.cert = fs.readFileSync("./ssl/sportsstore.crt");
-    ssloptions.key = fs.readFileSync("./ssl/sportsstore.pem");
-}
+const data = require("./data.json");
 
 const app = express();
 
-// Middleware
-app.use(bodyParser.json());
-app.use(auth);
-app.use("/api", router);
-app.use(history());
-app.use("/", express.static("./dist/sportsstore/browser"));
+// Parse incoming JSON
+app.use(express.json());
 
-// Angular fallback route
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "dist/sportsstore/browser", "index.html"));
+// Authentication middleware
+app.use(auth);
+
+// Example route to get products
+app.get("/products", (req, res) => {
+  res.json(data.products);
 });
 
-// Start HTTP server
-app.listen(80, () => console.log("HTTP Server running on port 80"));
+// Default fallback for unmatched routes
+app.use((req, res) => {
+  res.status(404).json({ message: "Route not found" });
+});
 
-// Optional HTTPS server
-if (useHttps) {
-    https.createServer(ssloptions, app).listen(443, () => {
-        console.log("HTTPS Server running on port 443");
-    });
-} else {
-    console.log("HTTPS disabled");
-}
+// Use PORT environment variable (Render requires this)
+const port = process.env.PORT || 10000;
+app.listen(port, () => {
+  console.log(`✅ JSON backend running on port ${port}`);
+});
+
