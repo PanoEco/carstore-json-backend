@@ -1,0 +1,291 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Toyota Corolla 2020",
+      "category": "Sedan",
+      "description": "Fuel-efficient with modern safety features.",
+      "price": 200000,
+      "imageUrl": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/corolla-hatchback/colors/SUPER_WHITE.jpg",
+      "year": 2020,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "White"
+    },
+    {
+      "id": 2,
+      "name": "Volkswagen Golf GTI 2021",
+      "category": "Hatchback",
+      "description": "Sporty drive with a premium interior.",
+      "price": 350000,
+      "imageUrl": "https://i.ytimg.com/vi/AYBoYaoWT8o/maxresdefault.jpg",
+      "year": 2021,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "White"
+    },
+    {
+      "id": 3,
+      "name": "Ford Ranger 2022",
+      "category": "Pickup",
+      "description": "Reliable workhorse with 4x4 capability.",
+      "price": 450000,
+      "imageUrl": "https://imgcdn.zigwheels.my/large/gallery/color/31/1871/ford-ranger-2022-color-952222.jpg",
+      "year": 2022,
+      "mileage": "45,000 km",
+      "fuelType": "Diesel",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "White"
+    },
+    {
+      "id": 4,
+      "name": "Hyundai Tucson 2023",
+      "category": "SUV",
+      "description": "Comfortable urban SUV with smart features.",
+      "price": 520000,
+      "imageUrl": "https://th.bing.com/th/id/OIP.JBM6MMcgPaN21ipjEmdfGgAAAA?cb=iwp2&rs=1&pid=ImgDetMain",
+      "year": 2023,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Red"
+    },
+    {
+      "id": 5,
+      "name": "Mercedes-Benz C-Class 2022",
+      "category": "Sedan",
+      "description": "Luxury sedan with performance and elegance.",
+      "price": 680000,
+      "imageUrl": "https://th.bing.com/th/id/R.06b52835a7cd6df3da03b3f3e5da0acc?rik=4IC6QaMx%2bah2Kg&pid=ImgRaw&r=0",
+      "year": 2022,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Blue"
+    },
+    {
+      "id": 6,
+      "name": "BMW X5 2021",
+      "category": "SUV",
+      "description": "High-performance SUV with luxury touches.",
+      "price": 850000,
+      "imageUrl": "https://th.bing.com/th/id/OIP.qHjLl22qBkJ9e4g0lPE3swHaFC?cb=iwp2&rs=1&pid=ImgDetMain",
+      "year": 2021,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Grey"
+    },
+    {
+      "id": 7,
+      "name": "Mazda CX-5 2023",
+      "category": "SUV",
+      "description": "Stylish and reliable mid-size SUV.",
+      "price": 430000,
+      "imageUrl": "https://th.bing.com/th/id/OIP.wdJth88H9-o-0v0Vgwo5tgHaER?cb=iwp2&rs=1&pid=ImgDetMain",
+      "year": 2023,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Grey"
+    },
+    {
+      "id": 8,
+      "name": "Nissan Navara 2022",
+      "category": "Pickup",
+      "description": "Tough and durable pickup for all terrains.",
+      "price": 470000,
+      "imageUrl": "https://th.bing.com/th/id/OIP.AQmQozXCHMSKLdg4-fAo5AHaFj?o=7&cb=iwp2rm=3&rs=1&pid=ImgDetMain",
+      "year": 2022,
+      "mileage": "45,000 km",
+      "fuelType": "Diesel",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Black"
+    },
+    {
+      "id": 9,
+      "name": "Renault Clio 2022",
+      "category": "Hatchback",
+      "description": "Compact and fuel-efficient hatchback.",
+      "price": 210000,
+      "imageUrl": "https://www.bristolstreet.co.uk/images/new/vertu/car/renault/clio/colour-swatches/metallic-diamondblack.jpg",
+      "year": 2022,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Black"
+    },
+    {
+      "id": 10,
+      "name": "Kia Sportage 2023",
+      "category": "SUV",
+      "description": "Modern design with advanced tech.",
+      "price": 490000,
+      "imageUrl": "https://www.driva.com.au/static/fcf9a5da543b1cfec5f10f01e5c0f6b7/6b6b2/d13663fa-5f7e-4b1e-b091-5a6091ba787c_Green-2023-Kia-Sportage-with-mountains-in-the-background.jpg",
+      "year": 2023,
+      "mileage": "45,000 km",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "engine": "1.8L",
+      "color": "Green"
+    }
+  ],
+  "orders": [
+    {
+      "name": "pano",
+      "address": "11 mazabuka",
+      "city": "pretoria",
+      "state": "gauteng",
+      "zip": "0071",
+      "country": "southafrica",
+      "shipped": false,
+      "lines": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Toyota Corolla 2020",
+            "category": "Sedan",
+            "description": "Fuel-efficient with modern safety features.",
+            "price": 200000,
+            "imageUrl": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/corolla-hatchback/colors/SUPER_WHITE.jpg",
+            "year": 2020,
+            "mileage": "45,000 km",
+            "fuelType": "Petrol",
+            "transmission": "Automatic",
+            "engine": "1.8L",
+            "color": "White"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "pano",
+      "address": "11 mazabuka",
+      "city": "pretoria",
+      "state": "gauteng",
+      "zip": "0071",
+      "country": "southafrica",
+      "shipped": false,
+      "lines": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Toyota Corolla 2020",
+            "category": "Sedan",
+            "description": "Fuel-efficient with modern safety features.",
+            "price": 200000,
+            "imageUrl": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/corolla-hatchback/colors/SUPER_WHITE.jpg",
+            "year": 2020,
+            "mileage": "45,000 km",
+            "fuelType": "Petrol",
+            "transmission": "Automatic",
+            "engine": "1.8L",
+            "color": "White"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "pano",
+      "address": "11 mazabuka",
+      "city": "pretoria",
+      "state": "gauteng",
+      "zip": "0071",
+      "country": "southafrica",
+      "shipped": false,
+      "lines": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Toyota Corolla 2020",
+            "category": "Sedan",
+            "description": "Fuel-efficient with modern safety features.",
+            "price": 200000,
+            "imageUrl": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/corolla-hatchback/colors/SUPER_WHITE.jpg",
+            "year": 2020,
+            "mileage": "45,000 km",
+            "fuelType": "Petrol",
+            "transmission": "Automatic",
+            "engine": "1.8L",
+            "color": "White"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "pano",
+      "address": "11 mazabuka",
+      "city": "pretoria",
+      "state": "gauteng",
+      "zip": "0071",
+      "country": "southafrica",
+      "shipped": false,
+      "lines": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Toyota Corolla 2020",
+            "category": "Sedan",
+            "description": "Fuel-efficient with modern safety features.",
+            "price": 200000,
+            "imageUrl": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/corolla-hatchback/colors/SUPER_WHITE.jpg",
+            "year": 2020,
+            "mileage": "45,000 km",
+            "fuelType": "Petrol",
+            "transmission": "Automatic",
+            "engine": "1.8L",
+            "color": "White"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "pano",
+      "address": "11 mazabuka",
+      "city": "pretoria",
+      "state": "gauteng",
+      "zip": "0071",
+      "country": "southafrica",
+      "shipped": false,
+      "lines": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Toyota Corolla 2020",
+            "category": "Sedan",
+            "description": "Fuel-efficient with modern safety features.",
+            "price": 200000,
+            "imageUrl": "https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/corolla-hatchback/colors/SUPER_WHITE.jpg",
+            "year": 2020,
+            "mileage": "45,000 km",
+            "fuelType": "Petrol",
+            "transmission": "Automatic",
+            "engine": "1.8L",
+            "color": "White"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 5
+    }
+  ]
+}
